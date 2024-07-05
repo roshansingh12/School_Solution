@@ -1,0 +1,89 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Teacher_api/Values/CalculateSum",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7010
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/teacher/CalculateSum",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/Teacher_api/Values/CalculateSub",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7010
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/teacher/CalculateSub",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Teacher_api/Values/CalculateMul",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7010
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/teacher/CalculateMul",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Student_api/Values/CalculateSum",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7184
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/Student/CalculateSum",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/Student_api/Values/CalculateSub",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7184
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/Student/CalculateSub",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Student_api/Values/CalculateMul",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7184
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/Student/CalculateMul",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7202"
+  }
+  /*{
+    "DownstreamPathTemplate": "",
+    "DownstreamScheme": "",
+    "DownstreamHostAndPorts": "",
+    "UpstreamPathTemplate": "",
+    "UpstreamHttpMethod": ""
+  }*/
+}

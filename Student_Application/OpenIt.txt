@@ -1,0 +1,29 @@
+﻿Model Binding :
+Model Binding is a process of mapping client request data to action method parameters.
+
+client request data can be from various sources -> Body, Form, Header, Query String
+
+Types :
+FromForm
+FromBody
+FromQuery
+FromHeader
+FromRoute
+
+
+Exclude prpoerties from model:
+Using [JsonIgnore] above prpoerties in models
+using other model/DTOs and mapping it to original model
+Ex-> Employees table have columns : Id, Name, email, Salary, Age, Address
+I want only each employee Name, Age, Salary
+For that I can create EmployeeDTO
+either we can do hardcode mapping or we can use Automapper-> 
+
+Automapper setup :
+Install Automapper Package
+Create Automapper Profile
+Register Automapper in Program.cs
+Inject IMapper in controllers/classes where you want mapping
+Map Objects Use the IMapper-> _mapper.Map<Destination_obj>(source_obj); to map bw objects
+
+
